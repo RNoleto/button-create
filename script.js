@@ -43,11 +43,11 @@ function handleChange(event) {
   showCss();
 }
 
-function saveValues(name, value) {
+function saveValues(name, value){
   localStorage[name] = value;
 }
 
-function setValues() {
+function setValues(){
   const properties = Object.keys(localStorage);
   properties.forEach(propertie => {
     handleStyle[propertie](localStorage[propertie]);
